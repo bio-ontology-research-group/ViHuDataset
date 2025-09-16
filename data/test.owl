@@ -1,0 +1,2357 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://mowl.borg/associated_with -->
+
+    <ObjectProperty rdf:about="http://mowl.borg/associated_with"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://mowl.borg/10083 -->
+
+    <Class rdf:about="http://mowl.borg/10083">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/10165 -->
+
+    <Class rdf:about="http://mowl.borg/10165">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/102 -->
+
+    <Class rdf:about="http://mowl.borg/102">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/10549 -->
+
+    <Class rdf:about="http://mowl.borg/10549">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/10550 -->
+
+    <Class rdf:about="http://mowl.borg/10550">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/10558 -->
+
+    <Class rdf:about="http://mowl.borg/10558">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/10906 -->
+
+    <Class rdf:about="http://mowl.borg/10906">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/10908 -->
+
+    <Class rdf:about="http://mowl.borg/10908">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/10956 -->
+
+    <Class rdf:about="http://mowl.borg/10956">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_333763"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/11010 -->
+
+    <Class rdf:about="http://mowl.borg/11010">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/11059 -->
+
+    <Class rdf:about="http://mowl.borg/11059">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_37124"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/11143 -->
+
+    <Class rdf:about="http://mowl.borg/11143">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_31552"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_333763"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/11160 -->
+
+    <Class rdf:about="http://mowl.borg/11160">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/11177 -->
+
+    <Class rdf:about="http://mowl.borg/11177">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_31552"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/112 -->
+
+    <Class rdf:about="http://mowl.borg/112">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/11261 -->
+
+    <Class rdf:about="http://mowl.borg/11261">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/11331 -->
+
+    <Class rdf:about="http://mowl.borg/11331">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11676"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/115 -->
+
+    <Class rdf:about="http://mowl.borg/115">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/1191 -->
+
+    <Class rdf:about="http://mowl.borg/1191">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11060"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/123169 -->
+
+    <Class rdf:about="http://mowl.borg/123169">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/1464 -->
+
+    <Class rdf:about="http://mowl.borg/1464">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/1508 -->
+
+    <Class rdf:about="http://mowl.borg/1508">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/1650 -->
+
+    <Class rdf:about="http://mowl.borg/1650">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/1717 -->
+
+    <Class rdf:about="http://mowl.borg/1717">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11060"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/1778 -->
+
+    <Class rdf:about="http://mowl.borg/1778">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/1861 -->
+
+    <Class rdf:about="http://mowl.borg/1861">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/1869 -->
+
+    <Class rdf:about="http://mowl.borg/1869">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/1871 -->
+
+    <Class rdf:about="http://mowl.borg/1871">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10632"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/1874 -->
+
+    <Class rdf:about="http://mowl.borg/1874">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10632"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/1889 -->
+
+    <Class rdf:about="http://mowl.borg/1889">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/1956 -->
+
+    <Class rdf:about="http://mowl.borg/1956">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/196528 -->
+
+    <Class rdf:about="http://mowl.borg/196528">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11084"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/2010 -->
+
+    <Class rdf:about="http://mowl.borg/2010">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/2023 -->
+
+    <Class rdf:about="http://mowl.borg/2023">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11084"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_172148"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/2033 -->
+
+    <Class rdf:about="http://mowl.borg/2033">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/2064 -->
+
+    <Class rdf:about="http://mowl.borg/2064">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/215 -->
+
+    <Class rdf:about="http://mowl.borg/215">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/2181 -->
+
+    <Class rdf:about="http://mowl.borg/2181">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/2274 -->
+
+    <Class rdf:about="http://mowl.borg/2274">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_172148"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/22824 -->
+
+    <Class rdf:about="http://mowl.borg/22824">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1891762"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/22931 -->
+
+    <Class rdf:about="http://mowl.borg/22931">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/22954 -->
+
+    <Class rdf:about="http://mowl.borg/22954">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_31552"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/23118 -->
+
+    <Class rdf:about="http://mowl.borg/23118">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11676"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/23125 -->
+
+    <Class rdf:about="http://mowl.borg/23125">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_172148"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/23269 -->
+
+    <Class rdf:about="http://mowl.borg/23269">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/23341 -->
+
+    <Class rdf:about="http://mowl.borg/23341">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/23352 -->
+
+    <Class rdf:about="http://mowl.borg/23352">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/23463 -->
+
+    <Class rdf:about="http://mowl.borg/23463">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/23476 -->
+
+    <Class rdf:about="http://mowl.borg/23476">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_31552"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/23513 -->
+
+    <Class rdf:about="http://mowl.borg/23513">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11084"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/2355 -->
+
+    <Class rdf:about="http://mowl.borg/2355">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/23595 -->
+
+    <Class rdf:about="http://mowl.borg/23595">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_31552"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/23646 -->
+
+    <Class rdf:about="http://mowl.borg/23646">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/23654 -->
+
+    <Class rdf:about="http://mowl.borg/23654">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/23788 -->
+
+    <Class rdf:about="http://mowl.borg/23788">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/2495 -->
+
+    <Class rdf:about="http://mowl.borg/2495">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11908"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/25962 -->
+
+    <Class rdf:about="http://mowl.borg/25962">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/26073 -->
+
+    <Class rdf:about="http://mowl.borg/26073">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_31552"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/26090 -->
+
+    <Class rdf:about="http://mowl.borg/26090">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/26509 -->
+
+    <Class rdf:about="http://mowl.borg/26509">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10632"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/2677 -->
+
+    <Class rdf:about="http://mowl.borg/2677">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/2697 -->
+
+    <Class rdf:about="http://mowl.borg/2697">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/284119 -->
+
+    <Class rdf:about="http://mowl.borg/284119">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/2874 -->
+
+    <Class rdf:about="http://mowl.borg/2874">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/29950 -->
+
+    <Class rdf:about="http://mowl.borg/29950">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/29959 -->
+
+    <Class rdf:about="http://mowl.borg/29959">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11053"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/3005 -->
+
+    <Class rdf:about="http://mowl.borg/3005">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/3164 -->
+
+    <Class rdf:about="http://mowl.borg/3164">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/3308 -->
+
+    <Class rdf:about="http://mowl.borg/3308">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11082"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/3482 -->
+
+    <Class rdf:about="http://mowl.borg/3482">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/3654 -->
+
+    <Class rdf:about="http://mowl.borg/3654">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10298"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/3691 -->
+
+    <Class rdf:about="http://mowl.borg/3691">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_333763"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/3716 -->
+
+    <Class rdf:about="http://mowl.borg/3716">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/3875 -->
+
+    <Class rdf:about="http://mowl.borg/3875">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10310"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/403313 -->
+
+    <Class rdf:about="http://mowl.borg/403313">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/444 -->
+
+    <Class rdf:about="http://mowl.borg/444">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/4659 -->
+
+    <Class rdf:about="http://mowl.borg/4659">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11676"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/4780 -->
+
+    <Class rdf:about="http://mowl.borg/4780">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/4790 -->
+
+    <Class rdf:about="http://mowl.borg/4790">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/488 -->
+
+    <Class rdf:about="http://mowl.borg/488">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/4925 -->
+
+    <Class rdf:about="http://mowl.borg/4925">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/493 -->
+
+    <Class rdf:about="http://mowl.borg/493">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/493869 -->
+
+    <Class rdf:about="http://mowl.borg/493869">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/5062 -->
+
+    <Class rdf:about="http://mowl.borg/5062">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11676"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/51065 -->
+
+    <Class rdf:about="http://mowl.borg/51065">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/51366 -->
+
+    <Class rdf:about="http://mowl.borg/51366">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/51773 -->
+
+    <Class rdf:about="http://mowl.borg/51773">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_31552"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/53918 -->
+
+    <Class rdf:about="http://mowl.borg/53918">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11676"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/5445 -->
+
+    <Class rdf:about="http://mowl.borg/5445">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/5495 -->
+
+    <Class rdf:about="http://mowl.borg/5495">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/5515 -->
+
+    <Class rdf:about="http://mowl.borg/5515">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/55177 -->
+
+    <Class rdf:about="http://mowl.borg/55177">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/55288 -->
+
+    <Class rdf:about="http://mowl.borg/55288">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/56888 -->
+
+    <Class rdf:about="http://mowl.borg/56888">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/5700 -->
+
+    <Class rdf:about="http://mowl.borg/5700">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/5704 -->
+
+    <Class rdf:about="http://mowl.borg/5704">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/5710 -->
+
+    <Class rdf:about="http://mowl.borg/5710">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/57410 -->
+
+    <Class rdf:about="http://mowl.borg/57410">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_333763"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/57506 -->
+
+    <Class rdf:about="http://mowl.borg/57506">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/57552 -->
+
+    <Class rdf:about="http://mowl.borg/57552">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/57680 -->
+
+    <Class rdf:about="http://mowl.borg/57680">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_31552"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/578 -->
+
+    <Class rdf:about="http://mowl.borg/578">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10245"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/5813 -->
+
+    <Class rdf:about="http://mowl.borg/5813">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/5878 -->
+
+    <Class rdf:about="http://mowl.borg/5878">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/5906 -->
+
+    <Class rdf:about="http://mowl.borg/5906">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/6201 -->
+
+    <Class rdf:about="http://mowl.borg/6201">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_333763"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/6241 -->
+
+    <Class rdf:about="http://mowl.borg/6241">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11676"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/6426 -->
+
+    <Class rdf:about="http://mowl.borg/6426">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/6449 -->
+
+    <Class rdf:about="http://mowl.borg/6449">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/64746 -->
+
+    <Class rdf:about="http://mowl.borg/64746">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/64866 -->
+
+    <Class rdf:about="http://mowl.borg/64866">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/6598 -->
+
+    <Class rdf:about="http://mowl.borg/6598">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11676"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/6714 -->
+
+    <Class rdf:about="http://mowl.borg/6714">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/6741 -->
+
+    <Class rdf:about="http://mowl.borg/6741">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11070"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/6773 -->
+
+    <Class rdf:about="http://mowl.borg/6773">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11060"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/6845 -->
+
+    <Class rdf:about="http://mowl.borg/6845">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/689 -->
+
+    <Class rdf:about="http://mowl.borg/689">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/6890 -->
+
+    <Class rdf:about="http://mowl.borg/6890">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/6908 -->
+
+    <Class rdf:about="http://mowl.borg/6908">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/7037 -->
+
+    <Class rdf:about="http://mowl.borg/7037">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/7112 -->
+
+    <Class rdf:about="http://mowl.borg/7112">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/7266 -->
+
+    <Class rdf:about="http://mowl.borg/7266">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/7297 -->
+
+    <Class rdf:about="http://mowl.borg/7297">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/7419 -->
+
+    <Class rdf:about="http://mowl.borg/7419">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11060"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/7431 -->
+
+    <Class rdf:about="http://mowl.borg/7431">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_37124"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/7532 -->
+
+    <Class rdf:about="http://mowl.borg/7532">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/79083 -->
+
+    <Class rdf:about="http://mowl.borg/79083">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11084"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/79577 -->
+
+    <Class rdf:about="http://mowl.borg/79577">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11053"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/79586 -->
+
+    <Class rdf:about="http://mowl.borg/79586">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/79603 -->
+
+    <Class rdf:about="http://mowl.borg/79603">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/79971 -->
+
+    <Class rdf:about="http://mowl.borg/79971">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/80856 -->
+
+    <Class rdf:about="http://mowl.borg/80856">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/811 -->
+
+    <Class rdf:about="http://mowl.borg/811">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_333763"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/81618 -->
+
+    <Class rdf:about="http://mowl.borg/81618">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/821 -->
+
+    <Class rdf:about="http://mowl.borg/821">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/8266 -->
+
+    <Class rdf:about="http://mowl.borg/8266">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/83871 -->
+
+    <Class rdf:about="http://mowl.borg/83871">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/8405 -->
+
+    <Class rdf:about="http://mowl.borg/8405">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_333763"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/84445 -->
+
+    <Class rdf:about="http://mowl.borg/84445">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/8451 -->
+
+    <Class rdf:about="http://mowl.borg/8451">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10407"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/8508 -->
+
+    <Class rdf:about="http://mowl.borg/8508">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/871 -->
+
+    <Class rdf:about="http://mowl.borg/871">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11060"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/8879 -->
+
+    <Class rdf:about="http://mowl.borg/8879">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/9063 -->
+
+    <Class rdf:about="http://mowl.borg/9063">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/9093 -->
+
+    <Class rdf:about="http://mowl.borg/9093">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_333763"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/91304 -->
+
+    <Class rdf:about="http://mowl.borg/91304">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/9181 -->
+
+    <Class rdf:about="http://mowl.borg/9181">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11060"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/9217 -->
+
+    <Class rdf:about="http://mowl.borg/9217">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/9260 -->
+
+    <Class rdf:about="http://mowl.borg/9260">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/9500 -->
+
+    <Class rdf:about="http://mowl.borg/9500">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/9517 -->
+
+    <Class rdf:about="http://mowl.borg/9517">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/9530 -->
+
+    <Class rdf:about="http://mowl.borg/9530">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/9531 -->
+
+    <Class rdf:about="http://mowl.borg/9531">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1891762"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/9538 -->
+
+    <Class rdf:about="http://mowl.borg/9538">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/9554 -->
+
+    <Class rdf:about="http://mowl.borg/9554">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/960 -->
+
+    <Class rdf:about="http://mowl.borg/960">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/9611 -->
+
+    <Class rdf:about="http://mowl.borg/9611">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10245"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/9646 -->
+
+    <Class rdf:about="http://mowl.borg/9646">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/9741 -->
+
+    <Class rdf:about="http://mowl.borg/9741">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://mowl.borg/9780 -->
+
+    <Class rdf:about="http://mowl.borg/9780">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://mowl.borg/associated_with"/>
+                <someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10245 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10245"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10298 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10298"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10310 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10310"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10376 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10376"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10407 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10407"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10580 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10580"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10600 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10600"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10632 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10632"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11053 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11053"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11060 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11060"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11070 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11070"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11082 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11082"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11084 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11084"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11676 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11676"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11908 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11908"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_172148 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_172148"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1891762 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1891762"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_31552 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_31552"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_333763 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_333763"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_37124 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_37124"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_64320 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_64320"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.22.2022-05-07T21:32:11Z) https://github.com/owlcs/owlapi -->
+
