@@ -20,7 +20,7 @@ class HPIDataset(PathDataset):
             viruses = set()
             for owl_name, owl_cls in self.classes.as_dict.items():
                 
-                if "mowl.borg" in owl_name and owl_name.split("/")[-1].isnumeric():
+                if "mowl.borg" in owl_name:
                     genes.add(owl_cls)
                 if "NCBITaxon_" in owl_name:
                     viruses.add(owl_cls)

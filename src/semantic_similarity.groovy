@@ -82,7 +82,7 @@ def classes = ontology.getClassesInSignature().collect { it.toStringID() }
 def evalGenes = classes.findAll {
     def parts = it.split("/")
     def lastPart = parts[-1]
-    lastPart.isNumber() && it.contains("mowl.borg")
+    it.contains("mowl.borg")
 }.sort()
 
 println evalGenes.take(5)
@@ -110,7 +110,7 @@ gene_to_phenotype.each { line ->
     def gene = line[0]
     def phenotype = line[1]
     
-    if (phenotype in existingMpPhenotypes) {
+    if (phenotype in existingHpPhenotypes || phenotype in existingMpPhenotypes) {
 	if (!gene2pheno.containsKey(gene)) {
 	    gene2pheno[gene] = new HashSet()
 	}
@@ -251,8 +251,8 @@ logger.info("Starting Pool ")
 
 	}catch (Exception e) {
 	    println "Error computing similarity for pair: ${pair}. Setting scores to zero. Error: ${e.message}"
-	    println "Phenotypes for gene: ${gene2pheno[pair[1]]}"
-	    println "Phenotypes for virus: ${virus2pheno[pair[0]]}"
+	    println "Phenotypes for gene: ${gene2pheno[pair[0]]}"
+	    println "Phenotypes for virus: ${virus2pheno[pair[1]]}"
             throw e
 	    
 	}

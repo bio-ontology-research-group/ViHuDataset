@@ -24,10 +24,10 @@ def compute_rank_roc(ranks, num_entities):
 filename = sys.argv[1]
 
 def print_as_tex(micro_metrics, macro_metrics):
-    header = "MR & MRR & Hits@1 & Hits@3 & Hits@10 & Hits@100 & AUC"
+    header = "MR & MRR & Hits@10 & Hits@100 & AUC"
     print(header)
-    macro_metrics = [macro_metrics['mr'], macro_metrics['mrr'], macro_metrics['hits@1'], macro_metrics['hits@3'], macro_metrics['hits@10'], macro_metrics['hits@100'], macro_metrics['auc']]
-    micro_metrics = [micro_metrics['mr'], micro_metrics['mrr'], micro_metrics['hits@1'], micro_metrics['hits@3'], micro_metrics['hits@10'], micro_metrics['hits@100'], micro_metrics['auc']]
+    macro_metrics = [macro_metrics['mr'], macro_metrics['mrr'], macro_metrics['hits@10'], macro_metrics['hits@100'], macro_metrics['auc']]
+    micro_metrics = [micro_metrics['mr'], micro_metrics['mrr'], micro_metrics['hits@10'], micro_metrics['hits@100'], micro_metrics['auc']]
 
     for m in macro_metrics:
         print(f"{m:.3f} & ", end="")

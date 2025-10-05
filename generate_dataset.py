@@ -47,6 +47,9 @@ def main(save_dir):
 
     if not os.path.exists(os.path.join(out_dir, 'phenomenet-inferred.owl')):
         logger.error("File phenomenet-inferred.owl not found.")
+
+    if not os.path.exists(os.path.join(out_dir, 'human_genes_to_phenotype.txt')):
+        logger.error("File human_genes_to_phenotypes.txt not found. Downloading it from HPO databases as genes_to_phenotype.txt and rename it accordingly")
         
     if not os.path.exists(os.path.join(out_dir, 'MGI_GenePheno.rpt')):
         logger.error("File MGI_GenePheno.rpt not found. Downloading it for Gene-Phenotype associations")
@@ -81,25 +84,51 @@ def main(save_dir):
     associated_with = "http://mowl.borg/associated_with"
 
 
+    logger.info("Obtaining Human Gene-Phenotype associations from human_genes_to_phenotype.txt. Genes are represented as HGNC symbols and Phenotypes are represented as HP IDs")
+    human_gene_phenotype = pd.read_csv(os.path.join(out_dir, 'human_genes_to_phenotype.txt'), sep='\t')
+    human_gene_to_phenotype = dict()
+    for index, row in human_gene_phenotype.iterrows():
+        gene_symbol = row["gene_symbol"]
+        hpo_id = row["hpo_id"]
+        assert hpo_id.startswith("HP:")
+        hpo_id = "http://purl.obolibrary.org/obo/" + hpo_id.replace(":", "_")
+        gene_symbol = "http://mowl.borg/" + gene_symbol
+        if not hpo_id in existing_hp_phenotypes:
+            continue
+        if gene_symbol not in human_gene_to_phenotype:
+            human_gene_to_phenotype[gene_symbol] = set()
+        human_gene_to_phenotype[gene_symbol].add(hpo_id)
+
+    logger.info(f"Total human genes from HPO database: {len(human_gene_to_phenotype)}")
+
+    
     logger.info("Obtaining MGI to Entrez Gene mappings")
     hmd = pd.read_csv(os.path.join(out_dir, 'HMD_HumanPhenotype.rpt'), sep='\t')
     hmd.columns = ["HGene", "EntrezID", "MGene", "MGI ID", "Phenotypes", "Extra"]
-
-    hgene_to_entrez = dict()
-    for i, row in hmd.iterrows():
-        hgene_to_entrez[row["HGene"]] = row["EntrezID"]
     
+    hgenes = set(hmd["HGene"].tolist())
+    entrez_ids = set(hmd["EntrezID"].tolist())
+    assert len(hgenes) == len(entrez_ids)
+    
+    hgene_to_entrez = dict()
+    entrez_to_hgene = dict()
+    for i, row in hmd.iterrows():
+        human_gene = "http://mowl.borg/" + row["HGene"]
+        hgene_to_entrez[human_gene] = row["EntrezID"]
+        entrez_to_hgene[row["EntrezID"]] = human_gene
+
+        
+    logger.info(f"Total human genes with Entrez IDs: {len(hgene_to_entrez)}")
+        
     mgi_to_entrez = dict()
     for i, row in hmd.iterrows():
         mgi_to_entrez[row["MGI ID"]] = row["EntrezID"]
 
-    
     logger.info("Obtaining Gene-Phenotype associations from MGI_GenePheno.rpt. Genes are represented as MGI IDs and Phenotypes are represented as MP IDs")
 
     mgi_gene_pheno = pd.read_csv(os.path.join(out_dir, 'MGI_GenePheno.rpt'), sep='\t', header=None)
     mgi_gene_pheno.columns = ["AlleleComp", "AlleleSymb", "AlleleID", "GenBack", "MP Phenotype", "PubMedID", "MGI ID", "empty", "MGI Genotype ID"]
 
-    gene_phenotypes = []
     for index, row in mgi_gene_pheno.iterrows():
         genes = row["MGI ID"]
         phenotype = row["MP Phenotype"]
@@ -110,16 +139,25 @@ def main(save_dir):
 
         for gene in genes.split('|'):
             if gene in mgi_to_entrez:
-                gene = mgi_to_entrez[gene]
-                gene = "http://mowl.borg/" + str(gene) #.replace(":", "_")
-                gene_phenotypes.append((gene, phenotype))
+                entrez = mgi_to_entrez[gene]
+                hgene = entrez_to_hgene[entrez]
+                # gene = mgi_to_entrez[gene]
+                # gene = "http://mowl.borg/" + str(gene) #.replace(":", "_")
+                # gene_phenotypes.append((gene, phenotype))
+                if not hgene in human_gene_to_phenotype:
+                    human_gene_to_phenotype[hgene] = set()
+                human_gene_to_phenotype[hgene].add(phenotype)
 
-    logger.info(f"Gene-Phenotype associations: {len(gene_phenotypes)}")
-    logger.info(f"\tE.g. {gene_phenotypes[0]}")
-    genes_with_phenotypes = set([gene for gene, _ in gene_phenotypes])
-    logger.info(f"Genes with phenotypes: {len(genes_with_phenotypes)}")
+    logger.info(f"Total human genes with phenotypes after adding MGI data: {len(human_gene_to_phenotype)}")
+
+    gene_phenotype_pairs = []
+    for gene, phenotypes in human_gene_to_phenotype.items():
+        for phenotype in phenotypes:
+            gene_phenotype_pairs.append((gene, phenotype))
     
-    
+    logger.info(f"Gene-Phenotype associations: {len(gene_phenotype_pairs)}")
+    logger.info(f"\tE.g. {gene_phenotype_pairs[0]}")
+        
     logger.info("Obtaining Virus-Phenotype associations from pathogens.4web.json. Viruses are represented as NCBI Taxon IDs and Phenotypes are represented as HP IDs")
 
     if not os.path.exists(os.path.join(out_dir, 'virus_taxids.tsv')):
@@ -164,7 +202,6 @@ def main(save_dir):
     virus_human_associations = []
 
     skipped_by_virus = 0
-    skipped_by_human = 0
     skipped_by_nan = 0
     skipped_by_non_existing_human_gene = 0
     for i, row in virus_human_associations_df.iterrows():
@@ -177,32 +214,26 @@ def main(save_dir):
             skipped_by_nan += 1
             continue
         human_gene = str(row['human_gene_name'])
-
-        if not human_gene in hgene_to_entrez:
+        human_gene = "http://mowl.borg/" + human_gene
+        
+        if not human_gene in human_gene_to_phenotype:
             skipped_by_non_existing_human_gene += 1
             continue
-        human_entrez = hgene_to_entrez[human_gene]
-        human_entrez = "http://mowl.borg/" + str(human_entrez)  # Assuming human_protein is Entrez Gene ID
-        if not human_entrez in genes_with_phenotypes:
-            skipped_by_human += 1
-            continue
-        virus_human_associations.append((virus_taxa, human_entrez))
+        virus_human_associations.append((virus_taxa, human_gene))
         
     logger.info(f"Total Virus-Human associations from HPIDB: {len(virus_human_associations)}")
     virus_human_associations = list(set(virus_human_associations))
     logger.info(f"Unique Virus-Human associations after removing duplicates: {len(virus_human_associations)}")
     logger.info(f"\tE.g. {virus_human_associations[0]}")
     logger.info(f"Skipped Virus-Human associations due to missing virus phenotypes: {skipped_by_virus}")
-    logger.info(f"Skipped Virus-Human associations due to missing human gene phenotypes: {skipped_by_human}")
     logger.info(f"Skipped Virus-Human associations due to missing human gene Entrez ID: {skipped_by_nan}")
     logger.info(f"Skipped Virus-Human associations due to human gene not in MGI: {skipped_by_non_existing_human_gene}")
     
-    gene_phenotypes = [(gene, phenotype) for gene, phenotype in gene_phenotypes if phenotype in classes]
+    gene_phenotypes = [(gene, phenotype) for gene, phenotype in gene_phenotype_pairs if phenotype in classes]
     virus_phenotypes = [(virus, phenotype) for virus, phenotype in virus_phenotypes if phenotype in classes]
     logger.info(f"Gene-Phenotype associations: {len(gene_phenotypes)}")
     logger.info(f"Virus-Phenotype associations: {len(virus_phenotypes)}")
     
-        
     gene_phenotype_axioms = HashSet([create_axiom(gene, gene_has_phenotype, phenotype) for gene, phenotype in gene_phenotypes])
     virus_phenotype_axioms = HashSet([create_axiom(virus, virus_has_phenotype, phenotype) for virus, phenotype in virus_phenotypes])
 

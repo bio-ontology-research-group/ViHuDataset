@@ -8,7 +8,7 @@ from mowl.owlapi import OWLAPIAdapter
 from mowl.projection import OWL2VecStarProjector, TaxonomyWithRelationsProjector
 from mowl.walking import Node2Vec
 from mowl.utils.data import FastTensorDataLoader
-from evaluators import HPIEvaluator
+from evaluators import HPIEvaluatorNN
 from dataset import HPIDataset
 from utils import print_as_md
 import click as ck
@@ -74,28 +74,27 @@ def main(embedding_dimension, epochs, window_size, num_walks,
     model.set_walker(Node2Vec(num_walks, walk_length, p=p, q=q, workers=10, outfile=corpus_filepath))
     model.set_w2v_model(vector_size=embedding_dimension, workers=16, epochs=epochs, min_count=1, window=window_size)
 
-    model.set_evaluator(HPIEvaluator, device)
+    model.set_evaluator(HPIEvaluatorNN, device)
 
-    if not only_test and not only_nn:
+    if not only_test:
         model.train(epochs=epochs)
         model.w2v_model.save(model_filepath)
         vectors_size = len(model.w2v_model.wv)
         print(f"Vectors size: {vectors_size} after training w2v model")
         os.remove(corpus_filepath)
 
-    if only_nn:
+    if not only_test:
         model.train_nn()
-        model.save_nn(model.nn_model_filepath)
-            
+                
         # model.from_pretrained(model_filepath)
         
 
 
-    model.test()
+    # model.test()
         
     # model.evaluate()
 
-    micro_metrics, macro_metrics = model.metrics
+    micro_metrics, macro_metrics = model.test()
 
     
     print("Test macro metrics")
@@ -163,7 +162,7 @@ class HPINet(nn.Module):
             t = data[:, 2]
         else:
             raise ValueError(f"Data shape not consistent: {data.shape}")
-        
+
         head_embs = self.human_gene_embedding_layer(h)
         tail_embs = self.virus_taxon_embedding_layer(t)
 
@@ -174,6 +173,7 @@ class RandomWalkPlusW2VModelNN(RandomWalkPlusW2VModel):
     def __init__(self, device, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
+        self.device = device
         self.embed_dim = 100
         self.batch_size = 32
         self.learning_rate = 0.001
@@ -289,13 +289,11 @@ class RandomWalkPlusW2VModelNN(RandomWalkPlusW2VModel):
 
             epoch_loss /= len(train_dataloader)
                 
-            
-
             hpi_net.eval()
 
-            metrics = self._evaluator.evaluate(hpi_net, mode="valid")
-            valid_mr = metrics["valid_mr"]
-            valid_mrr = metrics["valid_mrr"]
+            micro_metrics, macro_metrics = self._evaluator.evaluate(hpi_net, mode="valid")
+            valid_mr = micro_metrics["valid_mr"]
+            valid_mrr = micro_metrics["valid_mrr"]
 
             if valid_mrr > best_mrr:
                 best_mrr = valid_mrr
@@ -311,6 +309,8 @@ class RandomWalkPlusW2VModelNN(RandomWalkPlusW2VModel):
                 logger.info("Early stopping")
                 break
             
+        th.save(hpi_net.state_dict(), self.nn_model_filepath)
+
             
     def test(self):
         self.from_pretrained(self.model_filepath)
