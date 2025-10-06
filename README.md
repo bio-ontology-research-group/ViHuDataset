@@ -42,3 +42,11 @@ Data is provided in the repostory. In the case you want to regenerate the data, 
 python generate_dataset.py
 ```
 
+# mOWL Availability
+
+This dataset is also available through [mOWL](https://github.com/bio-ontology-research-group/mowl):
+
+```
+import mowl
+from mowl.datasets.builtin import HPIDataset
+```
